@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate & Construction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DreamLand Real Estate & Construction</h1>
+    <p>Your vision, our creation</p>
+  </header>
+  <nav>
+    <a href="#land-sale">Land For Sale</a>
+    <a href="#property-sale">Properties For Sale</a>
+    <a href="#book">Book Contract</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+  <div class="hero">
+    Find Your Dream Home Today
+  </div>
+
+  <section id="land-sale" class="section">
+    <h2>Land For Sale</h2>
+    <div class="columns">
+      <div class="property" onclick="openModal('https://images.unsplash.com/photo-1600607680917-d50d403f8c90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60')">
+        <img src="https://images.unsplash.com/photo-1600607680917-d50d403f8c90?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Land 1">
+        <div class="property-info">
+          <h3>Green Valley Plot</h3>
+          <p>1500 sq.ft. plot in serene location</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="property-sale" class="section">
+    <h2>Properties For Sale</h2>
+    <div class="columns">
+      <div class="property" onclick="openModal('https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60')">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="House 1">
+        <div class="property-info">
+          <h3>Luxury Villa</h3>
+          <p>3 BHK, Private Pool, Sea View</p>
+        </div>
+      </div>
+      <div class="property" onclick="openModal('https://images.unsplash.com/photo-1613977257363-707ba9348220?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60')">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348220?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="House 2">
+        <div class="property-info">
+          <h3>Urban Flat</h3>
+          <p>2 BHK, Close to Metro, Affordable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="section">
+    <h2>Book Building Contract</h2>
+    <div class="booking-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Describe your construction project..." rows="4" required></textarea>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p><strong>Dummy Contact:</strong> DreamLand Builders, Phone: 123-456-7890, Email: info@dreamland.com</p>
+    </div>
+  </section>
+
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImage" src="" alt="Expanded View">
+  </div>
+
+  <footer>
+    &copy; 2025 DreamLand Real Estate & Construction. All rights reserved.
+  </footer>
+
+  <script>
+    function openModal(imageUrl) {
+      document.getElementById('modalImage').src = imageUrl;
+      document.getElementById('imageModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('imageModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
